@@ -1,20 +1,42 @@
-/*!
 
- =========================================================
- * Now UI Kit - v1.3.0
- =========================================================
+var i = 0;
+var j=0;
+var txt = 'Hey, I am a software enginner.';
+var txt2='Tech Lover.';
+var speed = 80;
+function typeWriter() {
+  
+  if (i < txt.length) {
+    document.getElementById("desp").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+  else{
+    i=0
+    setTimeout(function(){
 
- * Product Page: https://www.creative-tim.com/product/now-ui-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+      document.getElementById("desp").innerHTML = " ";
+      setTimeout(txt2Writer, speed);
+    }, 800); 
+   
+  }
+}
+function txt2Writer(){
+ 
+  if (i < txt2.length) {
+    document.getElementById("desp").innerHTML += txt2.charAt(i);
+    i++;
+    setTimeout(txt2Writer, speed);
+  }
+}
 
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
+$(document).ready(function() {
+  $('body').removeClass('fade-out');
+  AOS.init( {
+    // uncomment below for on-scroll animations to played only once
+    // once: true  
+  }); // initialize animate on scroll library
+});
 
 var transparent = true;
 var big_image;

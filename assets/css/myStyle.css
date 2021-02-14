@@ -1,6 +1,18 @@
-.content{
+.center{
     text-align: center;
+    
 }
 .green{
-    color: green;
+    color: #378C3F;
+}
+.projcolor{
+    background-color: #378C3F;
+}
+.white{
+    color: white;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }

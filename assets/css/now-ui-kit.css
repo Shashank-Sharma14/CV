@@ -6265,14 +6265,17 @@ img {
   right: 12%;
 }
 
-[data-background-color="orange"] {
+[data-background-color="green"] {
   background-color:  #378C3F;
+}
+
+[data-background-color="grey"] {
+  background-color: #39424e;
 }
 
 [data-background-color="black"] {
   background-color: #2c2c2c;
 }
-
 [data-background-color]:not([data-background-color="gray"]) {
   color: #FFFFFF;
 }
