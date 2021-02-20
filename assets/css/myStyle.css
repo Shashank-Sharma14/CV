@@ -2,6 +2,11 @@
     text-align: center;
     
 }
+.left{
+    text-align: left;
+    
+}
+
 .green{
     color: #378C3F;
 }
@@ -16,3 +21,38 @@ body.fade-out {
     opacity: 0;
     transition: none;
 }
+
+.About{
+    padding-top: 70px;
+}
+
+.Education{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.Skill{
+    padding-bottom: 40px;
+}
+.Project{
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+.hr {
+	background-image: linear-gradient(90deg, #ffffff 0%, #378C3F 50%, #ffffff 100%);
+	width: 30rem;
+	height: 0.3rem
+}
+
+/* Education Style */
+.cc-education .h5 {
+    margin-bottom: 0;
+  }
+
+.cc-education .cc-education-header {
+    padding-top: 60px;
+    padding-right: 0;
+    text-align: center;
+    color: #fff;
+  }

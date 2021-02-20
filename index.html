@@ -21,10 +21,11 @@
 
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/myStyle.css" />
+    <link rel="stylesheet" href="assets/css/timeline.css" />
   </head>
-  <body class="fade-out " onload="typeWriter()">
+  <body class="fade-out " onload="wait()">
     <header>
       <div class="index-page sidebar-collapse">
         <nav
@@ -33,7 +34,7 @@
         >
           <div class="container">
             <div class="navbar-translate">
-              <a class="navbar-brand" href="#" rel="tooltip">
+              <a class="navbar-brand" href="#" rel="tooltip" onclick="reload()">
                 Shashank Sharma
               </a>
               <button
@@ -56,21 +57,21 @@
             >
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#about"> About </a>
+                  <a class="nav-link smooth-scroll" href="#about"> About </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#skill" class="nav-link">
+                  <a href="#skill" class="nav-link smooth-scroll">
                     <p>Skill</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#education">Education </a>
+                  <a class="nav-link smooth-scroll" href="#education">Education </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Project </a>
+                <li class="nav-item ">
+                  <a class="nav-link smooth-scroll" href="#project"> Project </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact"> Content </a>
+                <li class="nav-item " >
+                  <a class="nav-link smooth-scroll" href="#contact"> Content </a>
                 </li>
               </ul>
             </div>
@@ -88,19 +89,22 @@
           ></div>
           <div class="container">
             <div class="content-center brand">
-              <div style="margin-top: 800px;"><h2><span id="desp" ></span></h2></div>
+              <div style="margin-top: 800px; margin-left: 200; "><h4><span id="intro"></span> <span id="desp" ></span></h4></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section" id="about">
+    <!-- My About -->
+    <div  class="About" id="about">
       <div class="container">
         <div class="card">
           <div class="row">
             <div class="col-lg-6 col-md-12">
+              <div class="card-head">
+                <div class="h4 mt-0 title center">About</div>
+              </div>
               <div class="card-body">
-                <div class="h4 mt-0 title">About</div>
                 Experienced Full Stack Engineer with a demonstrated history of
                 working in the hospital & health care industry. Skilled in C#,
                 C++, REST API, and JavaScript. Strong engineering professional
@@ -108,8 +112,10 @@
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
+              <div class="card-head">
+                <div class="h4 mt-0 title center">Basic Information</div>
+              </div>
               <div class="card-body">
-                <div class="h4 mt-0 title">Basic Information</div>
                 <div class="row">
                   <div class="col-sm-4">
                     <strong class="text-uppercase">Age:</strong>
@@ -130,7 +136,7 @@
                   <div class="col-sm-4">
                     <strong class="text-uppercase">Language:</strong>
                   </div>
-                  <div class="col-sm-8">Hindi , English , German(Basic)</div>
+                  <div class="col-sm-8">Hindi , English(Internediate) , German(Basic)</div>
                 </div>
               </div>
             </div>
@@ -139,14 +145,78 @@
       </div>
     </div>
 
+     <!-- My education -->
+
+<div class="Education" id="education">
+  <div class="container cc-education ">
+    <div  class="h3 text-center mb-4 title">Education</div>
+
+    <center>
+      <div class="hr"></div>
+    </center>
+
+      <ul class="timeline">
+
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">Post Graduate Diploma in Advanced Computing (PG-DAC)</span>
+              <span class="time-wrapper"><span class="time">2019-2020</span></span>
+            </div>
+            <div class="desc"><a href="https://know-it.co.in/Home/Index" target="_blank"></a>Know-IT,C-DAC Acts</a><br>Pune (Maharashtra)</div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Bachelor of Engineering (B.E.)</span>
+              <span class="time-wrapper"><span class="time">2015-2019</span></span>
+            </div>
+            <div class="desc"><a href="https://www.rgpv.ac.in/" target="_blank">Rajive Gandhi Proudyogiki Vishwavidyalaya(R.G.P.V)</a><br>Bhopal (M.P)</div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">High School</span>
+              <span class="time-wrapper"><span class="time">2013 - 2015</span></span>
+            </div>
+            <div class="desc"><a href="http://www.daffodilsmzp.com/contact_us.aspx" target="_blank"> Daffodile Public School</a><br> Mirzapur (U.P)</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Matriculation</span>
+              <span class="time-wrapper"><span class="time">2012-2013</span></span>
+            </div>
+            <div class="desc"> <a href="http://www.sunbeamacademy.com/" target="_blank">Sunbeam Academy</a><br>Varanasi (U.P)</div>
+          </div>
+        </li>
+   
+      </ul>
+      </div>
+      </div>
+      </div>
+      
+
+
+
     <!-- My Skill -->
-    
-    <div class="Skill" id="skill">
+    <div class="" id="skill">
+      <div  class="h3 text-center mb-4 title">My Skill</div>
+    <div class="">
       <div class="container">
-        <h2 class="center"><strong>My Skills </strong></h2>
-        <div class="card">
+        <div class="card Skill">
           <div class="row">
             <div class="col-lg-6 col-md-12">
+              <div class="card-head">
+                <div class="h4 mt-0 title center">Language</div>
+              </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-sm-4">
@@ -224,11 +294,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card-body">
-                <div class="row">
+                <div class="row mt-3">
                   <div class="col-sm-4">
                     <strong class="text-uppercase">C#</strong>
                   </div>
@@ -287,7 +353,7 @@
                 </div>
                 <div class="row mt-3">
                   <div class="col-sm-4">
-                    <strong class="text-uppercase">Azure</strong>
+                    <strong class="text-uppercase">SQL</strong>
                   </div>
                   <div class="col-sm-8">
                     <div class="progress">
@@ -306,16 +372,139 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="card-head">
+                <div class="h4 mt-0 title center">Framework</div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <strong class="text-uppercase">Angular 2+</strong>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        70%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4">
+                    <strong class="text-uppercase">Spring boot</strong>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        70%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4">
+                    <strong class="text-uppercase">.Net Core</strong>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+                        role="progressbar"
+                        style="width: 60%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        60%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h4 mt-0 title center">Other</div>
+                <div class="row mt-3">
+                  <div class="col-sm-4">
+                    <strong class="text-uppercase">Azure</strong>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+                        role="progressbar"
+                        style="width: 60%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        60%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4">
+                    <strong class="text-uppercase">Git</strong>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+                        role="progressbar"
+                        style="width: 60%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        60%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4">
+                    <strong class="text-uppercase">Docker</strong>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+                        role="progressbar"
+                        style="width: 50%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        50%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
 
-    <!-- My Education -->
-  <div class="Skill" id="education">
+    <!-- My Project -->
+  <div class="Project " id="project">
     <div class="section section-tabs">
       <div class="container">
-        <h2 class="center"><strong>Education</strong></h2>
+        <div  class="h3 text-center mb-4 title">Project</div>
         <div class="row">
           <!-- Tabs with Background on Card -->
           <div class="card">
@@ -329,36 +518,36 @@
                   <a
                     class="nav-link active"
                     data-toggle="tab"
-                    href="#Tenth"
+                    href="#simon"
                     role="tab"
-                    >2012-2013</a
+                    >Simon</a
                   >
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link"
                     data-toggle="tab"
-                    href="#Twelve"
+                    href="#hotel"
                     role="tab"
-                    >2013-2015</a
+                    >Hotel Managment System</a
                   >
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link"
                     data-toggle="tab"
-                    href="#BE"
+                    href="#movie"
                     role="tab"
-                    >2015-2019</a
+                    >Movie Rental Site</a
                   >
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link"
                     data-toggle="tab"
-                    href="#CDAC"
+                    href="#helping"
                     role="tab"
-                    >2019-2020</a
+                    >Helping Hand</a
                   >
                 </li>
               </ul>
@@ -366,46 +555,52 @@
             <div class="card-body">
               <!-- Tab panes -->
               <div class="tab-content text-center">
-                <div class="tab-pane active" id="Tenth" role="tabpanel">
-                  <p>
-                    <h3 ><b> Secondary School Certificate (SSC)</b></h3>
-                  </p>
-                  <p>
-                    <a href="http://www.sunbeamacademy.com/" target="_blank"><h3>Sunbeam Academy</h3></a>
-                  </p>
-                     Varanasi (U.P)
+                <div class="tab-pane active left" id="simon" role="tabpanel">
+                  <strong> Description : </strong>
+                  Simon is an electronic game of memory skill. The device has four colored buttons, each producing a particular tone when it is pressed or activated by the device. A round
+                  in the game consists of the device lighting up one or more buttons in a random order, after which the player must reproduce that order by pressing the buttons.
+                  As the game progresses, the number of buttons to be pressed increases. <a href="">Play Now</a>
+                       <br><br><br>
+                 <strong> Platform : </strong> <span class="green"> HTML , JavaScript , Bootstrap</span>
+                 <br> <br>
+                 <strong> Duration : </strong> <span class="green"> 15 days</span>
                 </div>
 
-                <div class="tab-pane" id="Twelve" role="tabpanel">
-                  <p>
-                    <h3 ><b> Higher Secondary School Certificate (HSSC) </b></h3>
-                  </p>
-                  <p>
-                    <a href="http://www.daffodilsmzp.com/contact_us.aspx" target="_blank"> <h3>Daffodile Public School</h3></a>
-                  </p>
-                     Mirzapur (U.P)
+                <div class="tab-pane left" id="hotel" role="tabpanel">
+                  <strong> Description : </strong>
+                 This JAVA based Hotal Managment System was mainly designed to allocate room as per customer's requirement provide services to customer , cancellation 
+                 of room, updation of various services and room.
+                     <br><br><br>
+               <strong> Platform : </strong> <span class="green"> NETBEANS , JAVA , MySQL </span>
+               <br> <br>
+               <strong> Duration : </strong> <span class="green"> 7 days</span>
                     
                 </div>
 
-                <div class="tab-pane" id="BE" role="tabpanel">
-                  <p>
-                    <h3 ><b>Bachelor of Engineering (B.E.)</b></h3>
-                  </p>
-                  <p>
-                    <a href="https://www.rgpv.ac.in/" target="_blank"><h3>Rajive Gandhi Proudyogiki Vishwavidyalaya(R.G.P.V)</h3></a>
-                  </p>
-                     Bhopal (M.P)
+                <div class="tab-pane left" id="movie" role="tabpanel">
+                  <strong> Description : </strong>
+                    Medicine are expensive and many people cannot afford them . Healping hand is a Web based application which provide
+                     a way to donate unused madicine to needy people . The doner can register on our portal and can donate the medicine to diff erent NGO's 
+                      which are register to our poratl.
+                       <br><br><br>
+                 <strong> Platform : </strong> <span class="green"> HTML , JavaScript , ASP.net MVC , SQL </span>
+                 <br> <br>
+                 <strong> Duration : </strong> <span class="green"> 15 days</span>
+                </div>
+
+                <div class="tab-pane left" id="helping" role="tabpanel">
+                  <strong> Description : </strong>
+                    Medicine are expensive and many people cannot afford them . Healping hand is a Web based application which provide
+                     a way to donate unused madicine to needy people . The doner can register on our portal and can donate the medicine to diff erent NGO's 
+                      which are register to our poratl.
+                      <br><br><br>
+                 <strong> Platform : </strong> <span class="green"> Java , Sprint Boot REST API , JPA , Angular , Bootstrap , SQL</span>
+                 <br><br>
+
+                 <strong> Duration : </strong> <span class="green"> 1 month</span>
                      
                 </div>
-                <div class="tab-pane" id="CDAC" role="tabpanel">
-                  <p>
-                    <h3><b> Post Graduate Diploma in Advanced Computing (PG-DAC) </b></h3>
-                  </p>
-                  <p>
-                    <a href="https://know-it.co.in/" target="_blank"><h3> Know-IT,C-DAC Acts </h3></a>
-                  </p>
-                     Pune (Maharashtra)
-                </div>
+                
               </div>
             </div>
           </div>
@@ -416,6 +611,7 @@
 
   <!-- Project Section -->
 
+ 
 
 
 <div class="center ">
@@ -433,23 +629,8 @@
       type="text/javascript"
     ></script>
 
-    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-    <script src="assets/js/plugins/bootstrap-switch.js"></script>
-
-    
-
-    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
     <script
-      src="../assets/js/plugins/bootstrap-datepicker.js"
-      type="text/javascript"
-    ></script>
-
-    <!--  Google Maps Plugin    -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-
-    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-    <script
-      src="assets/js/now-ui-kit.js?v=1.2.0"
+      src="assets/js/main.js"
       type="text/javascript"
     ></script>
   </body>
