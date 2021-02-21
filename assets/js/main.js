@@ -7,6 +7,7 @@ var txt2='tech lover.';
 var speed = 80;
 
 function wait(){
+  j++;
   document.getElementById("intro").innerHTML = " ";
   document.getElementById("desp").innerHTML = " ";
   setTimeout(txtWriter,1500);
@@ -367,3 +368,4 @@ function debounce(func, wait, immediate) {
     if (immediate && !timeout) func.apply(context, args);
   };
 };
+
