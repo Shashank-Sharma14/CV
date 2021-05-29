@@ -71,10 +71,7 @@ function txt2Writer(){
 
 $(document).ready(function() {
   $('body').removeClass('fade-out');
-  AOS.init( {
-    // uncomment below for on-scroll animations to played only once
-    // once: true  
-  }); // initialize animate on scroll library
+  // initialize animate on scroll library
 });
 
 $('a.smooth-scroll')
